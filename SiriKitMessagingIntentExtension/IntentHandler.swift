@@ -22,6 +22,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
     
     var locationManager:CLLocationManager?
     var coordinates = ""
+    var date = ""
     
     override func handler(for intent: INIntent) -> Any {
         // This is the default implementation.  If you want different objects to handle different intents,
@@ -49,12 +50,12 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
     // MARK: - INSendMessageIntentHandling
     
     // Implement resolution methods to provide additional information about your intent (optional).
-    func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INPersonResolutionResult]) -> Void) {
-      
-                   let resolutionResults = [INPersonResolutionResult.success(with: INPerson.init(personHandle: INPersonHandle.init(value: "Raw", type: .unknown), nameComponents: PersonNameComponents.init(), displayName: "Raw", image: INImage.init(), contactIdentifier: "Raw", customIdentifier: "Raw"))]
+    func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INPersonResolutionResult]) -> Void)
+    {
+        let resolutionResults = [INPersonResolutionResult.success(with: INPerson.init(personHandle: INPersonHandle.init(value: "Raw", type: .unknown), nameComponents: PersonNameComponents.init(), displayName: "Raw", image: INImage.init(), contactIdentifier: "Raw", customIdentifier: "Raw"))]
         
             completion(resolutionResults)
-        }
+    }
     
     func resolveContent(for intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
         if let text = intent.content, !text.isEmpty {
@@ -82,13 +83,13 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
                                 
                                 let dateFormatter = DateFormatter()
                                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-                                let date = dateFormatter.string(from: Date())
+                                self.date = dateFormatter.string(from: Date())
                                 
                                 if let locValue = self.locationManager?.location?.coordinate
                                 {
                                     self.coordinates = "\(locValue.latitude),\(locValue.longitude)"
                                 }
-                                let dataToSend = "Here are your statistics\nTime Stamp: \(date)\nLocation: \(self.coordinates)"
+                                let dataToSend = "Here are your statistics\nTime Stamp: \(self.date)\nLocation: \(self.coordinates)"
                                 
                                 completion(INStringResolutionResult.success(with: dataToSend))
                             default:
@@ -120,6 +121,42 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
         
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
         let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
+        
+        let params = ["timeStamp":self.date, "location":self.coordinates]
+        let url = URL.init(string: "https://obscure-reef-46541.herokuapp.com/saveData")
+        var request = URLRequest.init(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        do {
+             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions())
+        } catch {
+            print("Exception---------")
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if error != nil
+            {
+                print("error=\(String(describing: error))")
+                return
+            }
+            
+            print("response = \(String(describing: response))")
+            
+            //Let's convert response sent from a server side script to a NSDictionary object:
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                
+                if let parseJSON = json {
+                    
+                    // Now we can access value of First Name by its key
+                    let firstNameValue = parseJSON["firstName"] as? String
+                    print("firstNameValue: \(String(describing: firstNameValue))")
+                }
+            } catch {
+                print(error)
+            }
+        }
+        task.resume()
         completion(response)
     }
     

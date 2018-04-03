@@ -10,60 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SiriKitMessagingIntentExtension/IntentHandler.swift"
-            timestampString = "544017904.540272"
+            timestampString = "544435207.833019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "resolveContent(for:with:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.AIRequest&gt;, Swift.Optional&lt;Any&gt;) -&gt; () in SiriKitMessagingIntentExtension.IntentHandler.resolveContent(for: __ObjC.INSendMessageIntent, with: (__ObjC.INStringResolutionResult) -&gt; ()) -&gt; ()"
-                  moduleName = "SiriKitMessagingIntentExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pallav/Documents/Workspace/Self/SiriKitMessaging/SiriKitMessagingIntentExtension/IntentHandler.swift"
-                  timestampString = "544017300.321178"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "4236">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.AIRequest&gt;, Swift.Optional&lt;Any&gt;) -&gt; () in SiriKitMessagingIntentExtension.IntentHandler.resolveContent(for: __ObjC.INSendMessageIntent, with: (__ObjC.INStringResolutionResult) -&gt; ()) -&gt; ()"
-                  moduleName = "SiriKitMessagingIntentExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pallav/Documents/Workspace/Self/SiriKitMessaging/SiriKitMessagingIntentExtension/IntentHandler.swift"
-                  timestampString = "544017300.323338"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "4428">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SiriKitMessagingIntentExtension/IntentHandler.swift"
-            timestampString = "544017904.540813"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "confirm(intent:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SiriKitMessagingIntentExtension/IntentHandler.swift"
-            timestampString = "544017904.541134"
+            timestampString = "544435207.83351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "locationManager(_:didFailWithError:)"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "confirm(intent:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SiriKitMessagingIntentExtension/IntentHandler.swift"
-            timestampString = "544017904.543116"
+            timestampString = "544435207.8338929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "handler(for:)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "confirm(intent:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

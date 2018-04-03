@@ -632,7 +632,7 @@
 				INFOPLIST_FILE = SiriKitMessaging/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c646af37-7222-4fac-b674-1bd30dedd114";
 				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
@@ -653,7 +653,7 @@
 				INFOPLIST_FILE = SiriKitMessaging/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c646af37-7222-4fac-b674-1bd30dedd114";
 				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
@@ -671,7 +671,7 @@
 				INFOPLIST_FILE = SiriKitMessagingIntentExtensionUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.sirikitui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "86d7716e-1b1b-43c2-acc7-8ba47f6d8e85";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard_NonEnterprise;
@@ -690,7 +690,7 @@
 				INFOPLIST_FILE = SiriKitMessagingIntentExtensionUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.sirikitui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "86d7716e-1b1b-43c2-acc7-8ba47f6d8e85";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard_NonEnterprise;
@@ -709,7 +709,7 @@
 				INFOPLIST_FILE = SiriKitMessagingIntentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.sirikit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "05601999-30fe-4411-9faf-ab0585126ee8";
 				PROVISIONING_PROFILE_SPECIFIER = "Sandbox SiriKit Extension";
@@ -728,7 +728,7 @@
 				INFOPLIST_FILE = SiriKitMessagingIntentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.product;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.sirikit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "05601999-30fe-4411-9faf-ab0585126ee8";
 				PROVISIONING_PROFILE_SPECIFIER = "Sandbox SiriKit Extension";
