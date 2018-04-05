@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="Kailasa.ttc">
+            <string>Kailasa</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="SiriKitTodayExtensionWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-63-bP8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-Aa-H7l">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="18.5"/>
+                                        <state key="normal" title="Tap to log your data at Raw Servers">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickOnSendDataButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="4gR-at-dO1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ORA-bX-EST"/>
+                                    <constraint firstAttribute="bottom" secondItem="TNt-Aa-H7l" secondAttribute="bottom" id="S9b-Fn-OgE"/>
+                                    <constraint firstItem="TNt-Aa-H7l" firstAttribute="top" secondItem="ib7-63-bP8" secondAttribute="top" id="StW-A0-iyf"/>
+                                    <constraint firstAttribute="trailing" secondItem="TNt-Aa-H7l" secondAttribute="trailing" id="dtR-AA-zRb"/>
+                                    <constraint firstItem="TNt-Aa-H7l" firstAttribute="leading" secondItem="ib7-63-bP8" secondAttribute="leading" id="yah-9E-4BR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgD-1R-H0k">
+                                <rect key="frame" x="0.0" y="120" width="320" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Stamp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6b-lz-sBH">
+                                        <rect key="frame" x="16" y="36" width="105.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Time Stamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-xG-hGq">
+                                        <rect key="frame" x="138" y="36" width="149.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VL-jW-IY3">
+                                        <rect key="frame" x="16" y="65" width="77.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH6-Tg-B3X">
+                                        <rect key="frame" x="138" y="65" width="122" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0VL-jW-IY3" firstAttribute="top" secondItem="V6b-lz-sBH" secondAttribute="bottom" constant="8" id="D1q-bW-coT"/>
+                                    <constraint firstItem="Fpj-xG-hGq" firstAttribute="centerY" secondItem="V6b-lz-sBH" secondAttribute="centerY" id="Ds4-yd-ITF"/>
+                                    <constraint firstItem="Fpj-xG-hGq" firstAttribute="leading" secondItem="GgD-1R-H0k" secondAttribute="leading" constant="138" id="EG3-sP-vns"/>
+                                    <constraint firstItem="V6b-lz-sBH" firstAttribute="top" secondItem="GgD-1R-H0k" secondAttribute="top" constant="36" id="FWg-tO-XRQ"/>
+                                    <constraint firstItem="gH6-Tg-B3X" firstAttribute="leading" secondItem="GgD-1R-H0k" secondAttribute="leading" constant="138" id="UBx-0u-bbp"/>
+                                    <constraint firstItem="V6b-lz-sBH" firstAttribute="leading" secondItem="GgD-1R-H0k" secondAttribute="leading" constant="16" id="azw-8H-gp6"/>
+                                    <constraint firstItem="gH6-Tg-B3X" firstAttribute="centerY" secondItem="0VL-jW-IY3" secondAttribute="centerY" id="fAJ-ke-gpm"/>
+                                    <constraint firstItem="0VL-jW-IY3" firstAttribute="leading" secondItem="GgD-1R-H0k" secondAttribute="leading" constant="16" id="g5e-gY-zC1"/>
+                                    <constraint firstAttribute="height" constant="120" id="wXl-M5-bNg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GgD-1R-H0k" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="5YB-zt-P1g"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="ib7-63-bP8" secondAttribute="trailing" id="HWZ-WV-g9Z"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="GgD-1R-H0k" secondAttribute="trailing" id="RfR-2y-OwY"/>
+                            <constraint firstAttribute="bottom" secondItem="GgD-1R-H0k" secondAttribute="bottom" id="cUs-lC-ylr"/>
+                            <constraint firstItem="ib7-63-bP8" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="iZO-CG-EF4"/>
+                            <constraint firstItem="ib7-63-bP8" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="ybA-k0-xUT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="240"/>
+                    <connections>
+                        <outlet property="labelContainerView" destination="GgD-1R-H0k" id="uJX-1Z-bOS"/>
+                        <outlet property="locationLabel" destination="gH6-Tg-B3X" id="LW4-L8-GDt"/>
+                        <outlet property="sendDataButton" destination="TNt-Aa-H7l" id="LGc-nf-bE4"/>
+                        <outlet property="timeStampLabel" destination="Fpj-xG-hGq" id="fb1-N5-Kmd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

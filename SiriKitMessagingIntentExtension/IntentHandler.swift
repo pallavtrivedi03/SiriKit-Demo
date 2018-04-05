@@ -33,15 +33,18 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
         let apiai = ApiAI.shared()
         apiai?.configuration = configuration
         
-        locationManager = CLLocationManager.init()
-        self.locationManager?.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager?.delegate = self
-            locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager?.startUpdatingLocation()
+        DispatchQueue.main.async {
+            self.locationManager = CLLocationManager.init()
+            self.locationManager?.requestWhenInUseAuthorization()
         }
+            if CLLocationManager.locationServicesEnabled()
+            {
+                self.locationManager?.delegate = self
+                self.locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+                self.locationManager?.startUpdatingLocation()
+        }
+
         
         
         return self
@@ -141,20 +144,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
             }
             
             print("response = \(String(describing: response))")
-            
-            //Let's convert response sent from a server side script to a NSDictionary object:
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
-                
-                if let parseJSON = json {
-                    
-                    // Now we can access value of First Name by its key
-                    let firstNameValue = parseJSON["firstName"] as? String
-                    print("firstNameValue: \(String(describing: firstNameValue))")
-                }
-            } catch {
-                print(error)
-            }
+           
         }
         task.resume()
         completion(response)

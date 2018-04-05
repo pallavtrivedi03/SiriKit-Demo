@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		07D142908657B841655FCE05 /* Pods_SiriKitMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D329292C6FD08594B6CFAD /* Pods_SiriKitMessaging.framework */; };
+		8C121FD02075EC4C00854D14 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C121FCF2075EC4C00854D14 /* NotificationCenter.framework */; };
+		8C121FD32075EC4C00854D14 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C121FD22075EC4C00854D14 /* TodayViewController.swift */; };
+		8C121FD62075EC4C00854D14 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C121FD42075EC4C00854D14 /* MainInterface.storyboard */; };
+		8C121FDA2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C121FCE2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8CEAB857206CB2F300C2D14F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAB856206CB2F300C2D14F /* AppDelegate.swift */; };
 		8CEAB859206CB2F300C2D14F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAB858206CB2F300C2D14F /* ViewController.swift */; };
 		8CEAB85C206CB2F300C2D14F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAB85A206CB2F300C2D14F /* Main.storyboard */; };
@@ -25,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8C121FD82075EC4C00854D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEAB84B206CB2F300C2D14F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C121FCD2075EC4C00854D14;
+			remoteInfo = SiriKitTodayExtensionWidget;
+		};
 		8CEAB884206CB5B900C2D14F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CEAB84B206CB2F300C2D14F /* Project object */;
@@ -50,6 +61,7 @@
 			files = (
 				8CEAB886206CB5B900C2D14F /* SiriKitMessagingIntentExtensionUI.appex in Embed App Extensions */,
 				8CEAB889206CB5B900C2D14F /* SiriKitMessagingIntentExtension.appex in Embed App Extensions */,
+				8C121FDA2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +74,11 @@
 		22D329292C6FD08594B6CFAD /* Pods_SiriKitMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriKitMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABF19B8B2C67DB8332B08F8 /* Pods-SiriKitMessagingIntentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriKitMessagingIntentExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiriKitMessagingIntentExtension/Pods-SiriKitMessagingIntentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6366852815BF99DABBDBC53E /* Pods-SiriKitMessagingIntentExtensionUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriKitMessagingIntentExtensionUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriKitMessagingIntentExtensionUI/Pods-SiriKitMessagingIntentExtensionUI.release.xcconfig"; sourceTree = "<group>"; };
+		8C121FCE2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriKitTodayExtensionWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C121FCF2075EC4C00854D14 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8C121FD22075EC4C00854D14 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8C121FD52075EC4C00854D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8C121FD72075EC4C00854D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C96D60D4B1CB3E646A59CC2 /* Pods-SiriKitMessagingIntentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriKitMessagingIntentExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriKitMessagingIntentExtension/Pods-SiriKitMessagingIntentExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8CEAB853206CB2F300C2D14F /* SiriKitMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEAB856206CB2F300C2D14F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +103,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C121FCB2075EC4C00854D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C121FD02075EC4C00854D14 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CEAB850206CB2F300C2D14F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,12 +152,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8C121FD12075EC4C00854D14 /* SiriKitTodayExtensionWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8C121FD22075EC4C00854D14 /* TodayViewController.swift */,
+				8C121FD42075EC4C00854D14 /* MainInterface.storyboard */,
+				8C121FD72075EC4C00854D14 /* Info.plist */,
+			);
+			path = SiriKitTodayExtensionWidget;
+			sourceTree = "<group>";
+		};
 		8CEAB84A206CB2F300C2D14F = {
 			isa = PBXGroup;
 			children = (
 				8CEAB855206CB2F300C2D14F /* SiriKitMessaging */,
 				8CEAB871206CB5B900C2D14F /* SiriKitMessagingIntentExtension */,
 				8CEAB87D206CB5B900C2D14F /* SiriKitMessagingIntentExtensionUI */,
+				8C121FD12075EC4C00854D14 /* SiriKitTodayExtensionWidget */,
 				8CEAB87A206CB5B900C2D14F /* Frameworks */,
 				8CEAB854206CB2F300C2D14F /* Products */,
 				0BC593AEDAE8B064154DB41A /* Pods */,
@@ -145,6 +181,7 @@
 				8CEAB853206CB2F300C2D14F /* SiriKitMessaging.app */,
 				8CEAB870206CB5B900C2D14F /* SiriKitMessagingIntentExtension.appex */,
 				8CEAB879206CB5B900C2D14F /* SiriKitMessagingIntentExtensionUI.appex */,
+				8C121FCE2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +217,7 @@
 				22D329292C6FD08594B6CFAD /* Pods_SiriKitMessaging.framework */,
 				E4ED31CF16C5BFED465A924F /* Pods_SiriKitMessagingIntentExtension.framework */,
 				001217A1EC649A40DEE61DA3 /* Pods_SiriKitMessagingIntentExtensionUI.framework */,
+				8C121FCF2075EC4C00854D14 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +235,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C121FCD2075EC4C00854D14 /* SiriKitTodayExtensionWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C121FDD2075EC4C00854D14 /* Build configuration list for PBXNativeTarget "SiriKitTodayExtensionWidget" */;
+			buildPhases = (
+				8C121FCA2075EC4C00854D14 /* Sources */,
+				8C121FCB2075EC4C00854D14 /* Frameworks */,
+				8C121FCC2075EC4C00854D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriKitTodayExtensionWidget;
+			productName = SiriKitTodayExtensionWidget;
+			productReference = 8C121FCE2075EC4C00854D14 /* SiriKitTodayExtensionWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8CEAB852206CB2F300C2D14F /* SiriKitMessaging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CEAB868206CB2F300C2D14F /* Build configuration list for PBXNativeTarget "SiriKitMessaging" */;
@@ -214,6 +269,7 @@
 			dependencies = (
 				8CEAB885206CB5B900C2D14F /* PBXTargetDependency */,
 				8CEAB888206CB5B900C2D14F /* PBXTargetDependency */,
+				8C121FD92075EC4C00854D14 /* PBXTargetDependency */,
 			);
 			name = SiriKitMessaging;
 			productName = SiriKitMessaging;
@@ -268,6 +324,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pallav Trivedi";
 				TargetAttributes = {
+					8C121FCD2075EC4C00854D14 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
 					8CEAB852206CB2F300C2D14F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
@@ -303,11 +363,20 @@
 				8CEAB852206CB2F300C2D14F /* SiriKitMessaging */,
 				8CEAB86F206CB5B900C2D14F /* SiriKitMessagingIntentExtension */,
 				8CEAB878206CB5B900C2D14F /* SiriKitMessagingIntentExtensionUI */,
+				8C121FCD2075EC4C00854D14 /* SiriKitTodayExtensionWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C121FCC2075EC4C00854D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C121FD62075EC4C00854D14 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CEAB851206CB2F300C2D14F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +513,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C121FCA2075EC4C00854D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C121FD32075EC4C00854D14 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CEAB84F206CB2F300C2D14F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,6 +550,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8C121FD92075EC4C00854D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C121FCD2075EC4C00854D14 /* SiriKitTodayExtensionWidget */;
+			targetProxy = 8C121FD82075EC4C00854D14 /* PBXContainerItemProxy */;
+		};
 		8CEAB885206CB5B900C2D14F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8CEAB878206CB5B900C2D14F /* SiriKitMessagingIntentExtensionUI */;
@@ -486,6 +568,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8C121FD42075EC4C00854D14 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C121FD52075EC4C00854D14 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		8CEAB85A206CB2F300C2D14F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,6 +603,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C121FDB2075EC4C00854D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
+				INFOPLIST_FILE = SiriKitTodayExtensionWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.todayExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "86d7716e-1b1b-43c2-acc7-8ba47f6d8e85";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_NonEnterprise;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C121FDC2075EC4C00854D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
+				INFOPLIST_FILE = SiriKitTodayExtensionWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.todayExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "86d7716e-1b1b-43c2-acc7-8ba47f6d8e85";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_NonEnterprise;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8CEAB866206CB2F300C2D14F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -741,6 +867,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C121FDD2075EC4C00854D14 /* Build configuration list for PBXNativeTarget "SiriKitTodayExtensionWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C121FDB2075EC4C00854D14 /* Debug */,
+				8C121FDC2075EC4C00854D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8CEAB84E206CB2F300C2D14F /* Build configuration list for PBXProject "SiriKitMessaging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
